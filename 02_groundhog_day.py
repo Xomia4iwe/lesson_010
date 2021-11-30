@@ -89,4 +89,5 @@ while True:
         print('Фил  наложил на себя руки')
         record_an_error(exc.__class__.__name__)
 print(f'Филу понадобилось {day} дней, для того, чтобы познать дзен и разрушить порочный круг!!!')
+
 # https://goo.gl/JnsDqu333
