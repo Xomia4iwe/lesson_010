@@ -25,8 +25,8 @@
 def registration(line):
     if len(line.split()) == 3:
         name, email, age = line.split(' ')
-        if name.isalpha() and 10 <= int(age) <= 99:
-            if '@ ' and '.' in email:
+        if name.isalpha() and age.isdigit():
+            if '@ ' and '.' in email and 10 <= int(age) <= 99:
                 with open('registrations_good.log', mode='a') as file:
                     file.write(f'{line}\n')
             else:
